@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Recetas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Buscador de Recetas</h1>
+    </header>
+    <main>
+        <div class="background"></div> <!-- Div para el fondo de imagen -->
+        <div class="search-container">
+            <div class="search-input-container">
+                <input type="text" id="searchInput" placeholder="Buscar...">
+                <button id="searchButton"><img src="/images/icons8-search-48.png" alt="Buscar"></button>
+            </div>
+            <select id="searchOptions">
+                <option value="name">Nombre del Plato</option>
+                <option value="category">Categoría</option>
+                <option value="ingredient">Ingrediente Principal</option>
+                <option value="area">Área (Nacionalidad)</option>
+            </select>
+        </div>
+        <div id="resultsGallery" class="gallery"></div>
+        <div id="mealInfo" class="meal-info"></div>
+        <button id="homeButton"><img src="/images/icons8-home-48.png" alt="Inicio"></button>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

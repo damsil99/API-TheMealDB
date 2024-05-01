@@ -1,0 +1,193 @@
+body, h1, h2, h3 {
+    font-family: 'Acme', sans-serif;
+}
+
+header {
+    background-color: #40545c; /* Color de fondo */
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 20px; /* Hacer los bordes circulares */
+    border: 2px solid white; /* Establecer el color del borde en blanco */
+}
+
+main {
+    padding: 2rem;
+    position: relative; /* Permitir posicionamiento relativo para el fondo de imagen */
+}
+
+.background {
+    position: fixed; /* Fijar la posición de la imagen de fondo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/backr.jpg'); /* Ruta de la imagen de fondo */
+    background-size: contain; /* Ajustar tamaño para que quepa dentro del contenedor */
+    background-position: center;
+    z-index: -1; /* Colocar detrás de todo */
+    background-attachment: fixed; /* Fijar la imagen de fondo en su posición */
+}
+
+.search-container {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-input-container {
+    display: flex;
+    align-items: center;
+}
+
+#searchInput {
+    flex: 1;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 20px; /* Hacer los bordes circulares */
+}
+
+#searchButton {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 10px; /* Ajustar el espaciado interno */
+    transition: transform 0.3s ease; /* Animación de transformación */
+}
+
+#searchButton img {
+    width: 40px; /* Tamaño de la imagen */
+    height: auto; /* Mantener la proporción */
+}
+
+#searchButton:hover {
+    transform: scale(1.1); /* Efecto de aumento al pasar el ratón */
+}
+
+#searchOptions {
+    border: none; /* Eliminar el borde */
+    border-radius: 20px; /* Hacer los bordes circulares */
+    background-color: rgba(240, 240, 240, 0.8); /* Blanco con mayor transparencia */
+    padding: 5px 15px; /* Agregar un relleno (10px arriba y abajo, 30px a la izquierda y derecha) */
+    appearance: none; /* Ocultar el estilo predeterminado del sistema */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el select */
+    width: 200px; /* Ajustar el ancho según sea necesario */
+}
+
+/* Estilo para las opciones */
+#searchOptions option {
+    background-color: white; /* Color de fondo para las opciones */
+    border-bottom: 1px solid #ccc; /* Agregar un borde inferior a las opciones */
+    padding: 10px; /* Agregar un relleno a las opciones */
+}
+
+/* Estilo para las opciones al pasar el ratón sobre ellas */
+#searchOptions option:hover {
+    background-color: #f0f0f0; /* Cambiar el color de fondo al pasar el ratón */
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los resultados se envuelvan */
+    justify-content: center; /* Centrar los resultados horizontalmente */
+    padding: 20px; /* Espacio interno */
+    border-radius: 10px; /* Bordes curvos */
+}
+
+.meal-info {
+    margin-top: 2rem;
+    text-align: center; /* Centrar el contenido */
+}
+
+.meal-card {
+    background-color: rgb(255, 255, 255, 0.5); /* Cambiar el color de fondo a blanco */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px; /* Ajuste de margen entre las tarjetas */
+    width: 200px; /* Ancho fijo para las tarjetas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease; /* Animación de transformación */
+}
+
+.meal-card:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+}
+
+/* Estilo para las imágenes de las recetas */
+.meal-card img {
+    width: 150px; /* Reducir el ancho de la imagen */
+    height: auto; /* Mantener la proporción de la imagen */
+    border-radius: 50%; /* Hacer los bordes circulares */
+    transition: transform 0.3s ease; /* Animación de transformación */
+}
+
+/* Efecto de flotar al pasar el ratón sobre la imagen */
+.meal-card img:hover {
+    transform: scale(1.1); /* Aumentar el tamaño de la imagen */
+}
+
+h1 {
+    font-size: 50px; /* Tamaño de fuente para h1 */
+    text-shadow: 2px 2px 4px rgba(117, 60, 250, 0.5); /* Sombras */
+}
+
+h2 {
+    font-size: 30px; /* Tamaño de fuente para h2 */
+    padding: 10px; /* Espacio interno dentro de la caja */
+    border: 2px solid black; /* Borde sólido negro */
+    border-radius: 10px; /* Bordes curvos */
+    background-color: #D2B48C; /* Marrón claro */
+}
+
+h3 {
+    font-size: 25px; /* Tamaño de fuente para h3 */
+    padding: 10px; /* Espacio interno dentro de la caja */
+    border: 2px solid black; /* Borde sólido negro */
+    border-radius: 10px; /* Bordes curvos */
+    background-color: #D2B48C; /* Marrón claro */
+}
+
+p {
+    font-family: 'Roboto', sans-serif; /* Cambiamos el estilo de letra del texto normal */
+    font-size: 16px; /* Tamaño de fuente para el texto normal */
+    font-weight: bold; /* Texto en negrita */
+    color: rgb(0, 0, 0); /* Color del texto */
+    padding: 10px; /* Espacio interno dentro de la caja */
+    border: 2px solid black; /* Borde sólido negro */
+    border-radius: 10px; /* Bordes curvos */
+    background-color: rgba(238, 171, 84, 0.6); /* Fondo rojo */
+}
+
+li {
+    font-family: 'Roboto', sans-serif; /* Cambiamos el estilo de letra del texto normal */
+    font-size: 16px; /* Tamaño de fuente para el texto normal */
+    font-weight: bold; /* Texto en negrita */
+    color: black; /* Color del texto negro */
+    list-style-type: square; /* Cambiar la viñeta a un cuadrado */
+    padding: 5px; /* Espacio interno dentro de la caja */
+    background-color: rgba(238, 171, 84, 0.6); 
+}
+
+#homeButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Agregar transición para suavizar el efecto */
+}
+
+#homeButton:hover {
+    transform: translateY(-5px); /* Flotar hacia arriba 5px al pasar el mouse */
+}
+
+#homeButton img {
+    width: 40px;
+    height: 40px;
+}
+
